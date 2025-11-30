@@ -1,0 +1,6 @@
+[project]
+name = "jupyter-lab-build"
+version = "0.0.0"
+dependencies = [
+    "PyGObject==3.54.5"
+]
