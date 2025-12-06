@@ -3,6 +3,7 @@
 c = get_config()  #noqa
 c.IdentityProvider.token = ""
 c.ContentsManager.allow_hidden = True
+c.ServerApp.open_browser = False
 
 #------------------------------------------------------------------------------
 # Application(SingletonConfigurable) configuration
