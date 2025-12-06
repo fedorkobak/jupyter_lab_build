@@ -520,6 +520,22 @@
                 "Ctrl Shift J"
             ],
             "selector": "body"
+        },
+        // Close tab
+        {
+            "command": "application:close",
+            "keys": [
+                "Atl W"
+            ],
+            "selector": "body",
+            "disabled": true
+        },
+        {
+            "command": "application:close",
+            "keys": [
+                "Ctrl W"
+            ],
+            "selector": "body"
         }
     ]
 }
