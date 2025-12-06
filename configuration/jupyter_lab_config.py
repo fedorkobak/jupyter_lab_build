@@ -2,7 +2,7 @@
 
 c = get_config()  #noqa
 c.IdentityProvider.token = ""
-
+c.ContentsManager.allow_hidden = True
 
 #------------------------------------------------------------------------------
 # Application(SingletonConfigurable) configuration

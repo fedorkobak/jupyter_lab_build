@@ -8,9 +8,4 @@ Uses `PyGObject` to run JupyterLab in a special window. This require special pac
 
 ## Configuration
 
-Install configuration:
-
-```bash
-cp shortcuts.jupyterlab-settings ~/.jupyter/lab/user-settings/\@jupyterlab/shortcuts-extension/
-cp jupyter_lab_config.py ~/.jupyter
-```
+Install configuration run script `configuration.sh`.
