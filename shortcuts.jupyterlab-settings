@@ -480,6 +480,46 @@
                 "Ctrl Shift L"
             ],
             "selector": "body"
+        },
+        // activate previous tab bar
+        {
+            "command": "application:activate-prevoious-tab-bar",
+            "keys": [
+                "Ctrl Shift ,"
+            ],
+            "selector": "body",
+            "disabled": true
+        },
+        {
+            "command": "toc:show-panel",
+            "keys": [
+                "Ctrl Shift K"
+            ],
+            "selector": "body",
+            "disabled": true
+        },
+        {
+            "command": "application:activate-previous-tab-bar",
+            "keys": [
+                "Ctrl Shift K"
+            ],
+            "selector": "body"
+        },
+        // activate next tab bar
+        {
+            "command": "application:activate-next-tab-bar",
+            "keys": [
+                "Ctrl Shift ."
+            ],
+            "selector": "body",
+            "disabled": true
+        },
+        {
+            "command": "application:activate-next-tab-bar",
+            "keys": [
+                "Ctrl Shift J"
+            ],
+            "selector": "body"
         }
     ]
 }
