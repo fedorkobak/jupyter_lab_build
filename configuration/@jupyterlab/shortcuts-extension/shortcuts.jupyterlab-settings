@@ -523,11 +523,11 @@
         },
         {
             "command": "codemirror:select-next-occurrence",
+            "selector": ".cm-content",
+            "disabled": true,
             "keys": [
-                "Ctrl Shift D"
-            ],
-            "selector": "body",
-            "disabled": true
+                "Accel Shift D"
+            ]
         },
         {
             "command": "application:activate-previous-tab-bar",
