@@ -443,9 +443,9 @@
             "disabled": true
         },
         {
-            "command": "apputils:display-shortcuts",
+            "command": "documentsearch:highlightPrevious",
             "keys": [
-                "Ctrl Shift H"
+                "Ctrl Shift G"
             ],
             "selector": "body",
             "disabled": true
@@ -453,7 +453,7 @@
         {
             "command": "application:activate-previous-tab",
             "keys": [
-                "Ctrl Shift H"
+                "Ctrl Shift G"
             ],
             "selector": "body"
         },
@@ -467,9 +467,9 @@
             "disabled": true
         },
         {
-            "command": "launcher:create",
+            "command": "docmanager:save-as",
             "keys": [
-                "Ctrl Shift L"
+                "Ctrl Shift S"
             ],
             "selector": "body",
             "disabled": true
@@ -477,7 +477,7 @@
         {
             "command": "application:activate-next-tab",
             "keys": [
-                "Ctrl Shift L"
+                "Ctrl Shift S"
             ],
             "selector": "body"
         },
@@ -491,17 +491,25 @@
             "disabled": true
         },
         {
-            "command": "toc:show-panel",
+            "command": "application:toggle-mode",
             "keys": [
-                "Ctrl Shift K"
+                "Ctrl Shift D"
             ],
             "selector": "body",
             "disabled": true
         },
         {
+            "command": "codemirror:select-next-occurrence",
+            "keys": [
+                "Ctrl Shift D"
+            ],
+            "selector" "body",
+            "disabled": ture
+        },
+        {
             "command": "application:activate-previous-tab-bar",
             "keys": [
-                "Ctrl Shift K"
+               "Ctrl Shift D"
             ],
             "selector": "body"
         },
@@ -515,9 +523,17 @@
             "disabled": true
         },
         {
+            "command": "filebrowser:toggle-main",
+            "keys": [
+                "Ctrl Shift F"
+            ],
+            "selector": "body",
+            "disabled": true
+        },
+        {
             "command": "application:activate-next-tab-bar",
             "keys": [
-                "Ctrl Shift J"
+                "Ctrl Shift F"
             ],
             "selector": "body"
         },
