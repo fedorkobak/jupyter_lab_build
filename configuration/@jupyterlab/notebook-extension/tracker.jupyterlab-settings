@@ -8,15 +8,18 @@
             "lineHeight": null
         }
     },
+    "markdownCellConfig": {
+        "customStyles": {
+            "fontFamily": null,
+            "fontSize": 10,
+            "lineHeight": null
+        }
+    },
     "defaultCell": "code",
     "autoStartDefaultKernel": false,
     "showInputPlaceholder": true,
     "inputHistoryScope": "global",
     "kernelShutdown": false,
-    "markdownCellConfig": {
-        "lineNumbers": false,
-        "matchBrackets": false
-    },
     "autoRenderMarkdownCells": false,
     "rawCellConfig": {
         "lineNumbers": false,
