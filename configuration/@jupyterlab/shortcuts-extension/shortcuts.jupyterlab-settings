@@ -86,6 +86,7 @@
     // apputils:update-notification
     // apputils:dismiss-notification
     // apputils:display-notifications
+    // lsp:completer-about-themes
     // editmenu:undo
     // editmenu:redo
     // editmenu:clear-current
@@ -121,8 +122,8 @@
     // tabsmenu:open
     // helpmenu:open
     // mainmenu:open-first
+    // lsp:rename-symbol
     // mermaid:copy-source
-    // jupyterlab-translation:en
     // apputils:load-statedb
     // apputils:reset
     // apputils:reset-on-load
@@ -153,6 +154,7 @@
     // toc:display-outputs-numbering
     // toc:show-panel
     // toc:toggle-collapse
+    // lsp:show-diagnostics-panel
     // running:show-modal
     // rendermime:handle-local-link
     // docmanager:clone
@@ -379,6 +381,11 @@
     // completer:invoke-file
     // completer:select-file
     // tooltip:launch-file
+    // jupyterlab-vim:toggle
+    // vim:enter-normal-mode
+    // lsp:jump-to-definition
+    // lsp:jump-to-reference
+    // lsp:jump-back
     // debugger:open-source
     // debugger:invoke-console-completer
     // debugger:select-console-completion
@@ -396,6 +403,7 @@
     // debugger:stepOut
     // debugger:pause-on-exceptions
     // debugger:show-panel
+    // jupyterlab-translation:en
     // filebrowser:delete
     // filebrowser:copy
     // filebrowser:cut
@@ -428,12 +436,26 @@
     // filebrowser:toggle-navigate-to-current-directory
     // recentmenu:open-recent
     // recentmenu:reopen-last
+    // vim:run-select-next-edit
+    // vim:run-cell-and-edit
+    // vim:cut-cell-and-edit
+    // vim:copy-cell-and-edit
+    // vim:paste-cell-and-edit
+    // vim:merge-and-edit
+    // vim:enter-insert-mode
+    // vim:leave-insert-mode
+    // vim:leave-current-mode
+    // vim:select-below-execute-markdown
+    // vim:select-above-execute-markdown
+    // vim:select-first-cell
+    // vim:select-last-cell
+    // vim:center-cell
+    // vim:no-action
     // application:toggle-context-menu
     // sidebar:switch
     // 
     // List of keyboard shortcuts:
     "shortcuts": [
-        // activate previous tab
         {
             "command": "application:activate-previous-tab",
             "keys": [
@@ -444,11 +466,11 @@
         },
         {
             "command": "documentsearch:highlightPrevious",
+            "selector": ".jp-mod-searchable",
+            "disabled": true,
             "keys": [
-                "Ctrl Shift G"
-            ],
-            "selector": "body",
-            "disabled": true
+                "Accel Shift G"
+            ]
         },
         {
             "command": "application:activate-previous-tab",
@@ -457,7 +479,6 @@
             ],
             "selector": "body"
         },
-        // activate next tab
         {
             "command": "application:activate-next-tab",
             "keys": [
@@ -481,7 +502,6 @@
             ],
             "selector": "body"
         },
-        // activate previous tab bar
         {
             "command": "application:activate-prevoious-tab-bar",
             "keys": [
@@ -503,17 +523,16 @@
             "keys": [
                 "Ctrl Shift D"
             ],
-            "selector" "body",
-            "disabled": ture
+            "selector": "body",
+            "disabled": true
         },
         {
             "command": "application:activate-previous-tab-bar",
             "keys": [
-               "Ctrl Shift D"
+                "Ctrl Shift D"
             ],
             "selector": "body"
         },
-        // activate next tab bar
         {
             "command": "application:activate-next-tab-bar",
             "keys": [
@@ -537,7 +556,6 @@
             ],
             "selector": "body"
         },
-        // Close tab
         {
             "command": "application:close",
             "keys": [
