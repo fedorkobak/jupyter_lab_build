@@ -456,33 +456,11 @@
     // 
     // List of keyboard shortcuts:
     "shortcuts": [
+        // activate previous tab
         {
             "command": "application:activate-previous-tab",
             "keys": [
                 "Ctrl Shift ["
-            ],
-            "selector": "body",
-            "disabled": true
-        },
-        {
-            "command": "documentsearch:highlightPrevious",
-            "selector": ".jp-mod-searchable",
-            "disabled": true,
-            "keys": [
-                "Accel Shift G"
-            ]
-        },
-        {
-            "command": "application:activate-previous-tab",
-            "keys": [
-                "Ctrl Shift G"
-            ],
-            "selector": "body"
-        },
-        {
-            "command": "application:activate-next-tab",
-            "keys": [
-                "Ctrl Shift ]"
             ],
             "selector": "body",
             "disabled": true
@@ -496,14 +474,39 @@
             "disabled": true
         },
         {
-            "command": "application:activate-next-tab",
+            "command": "application:activate-previous-tab",
             "keys": [
                 "Ctrl Shift S"
             ],
             "selector": "body"
         },
+        // activate next tab
         {
-            "command": "application:activate-prevoious-tab-bar",
+            "command": "application:activate-next-tab",
+            "keys": [
+                "Ctrl Shift ]"
+            ],
+            "selector": "body",
+            "disabled": true
+        },
+        {
+            "command": "documentsearch:highlightPrevious",
+            "selector": ".jp-mod-searchable",
+            "disabled": true,
+            "keys": [
+                "Accel Shift G"
+            ]
+        },
+        {
+            "command": "application:activate-next-tab",
+            "keys": [
+                "Ctrl Shift G"
+            ],
+            "selector": "body"
+        },
+        // activate previous tab bar
+        {
+            "command": "application:activate-previous-tab-bar",
             "keys": [
                 "Ctrl Shift ,"
             ],
@@ -533,6 +536,7 @@
             ],
             "selector": "body"
         },
+        // activate next tab bar
         {
             "command": "application:activate-next-tab-bar",
             "keys": [
@@ -556,6 +560,7 @@
             ],
             "selector": "body"
         },
+        // close tab
         {
             "command": "application:close",
             "keys": [
