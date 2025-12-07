@@ -10,3 +10,6 @@ cp configuration/shortcuts.jupyterlab-settings ${user_settings}/shortcuts-extens
 
 mkdir ${user_settings}/filebrowser-extension/
 cp configuration/browser.jupyterlab-settings ${user_settings}/filebrowser-extension/
+
+mkdir ${user_settings}/fileeditor-extension/
+cp configuration/plugin.jupyterlab-settings ${user_settings}/fileeditor-extension/
