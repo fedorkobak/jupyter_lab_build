@@ -5,5 +5,6 @@ dependencies = [
     "PyGObject==3.54.5",
     "jupyterlab",
     "jupyterlab-vim",
-    "jupyterlab-lsp"
+    "jupyterlab-lsp",
+    "jedi-language-server"
 ]
