@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "jupyter-lab-build"
 version = "0.0.0"
@@ -8,3 +12,9 @@ dependencies = [
     "jupyterlab-lsp",
     "python-lsp-server"
 ]
+
+[project.scripts]
+jlb = "jlb:main"
+
+[tool.setuptools]
+py-modules = ["jlb"]

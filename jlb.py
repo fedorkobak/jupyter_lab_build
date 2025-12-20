@@ -46,7 +46,7 @@ def server_process(shared: multiprocessing.managers.Namespace):
     server.start()
 
 
-if __name__ == "__main__":
+def main():
     cli_args = parse_arguments()
 
     url = cli_args.url
@@ -77,3 +77,7 @@ if __name__ == "__main__":
         logger.debug("Stopping juptyer server")
         jupyter_process.terminate()
         logger.debug("Server stopped")
+
+
+if __name__ == "__main__":
+    main()
