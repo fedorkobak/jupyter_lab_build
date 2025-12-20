@@ -13,7 +13,9 @@ gi.require_version('WebKit2', '4.1')
 from gi.repository import Gtk, WebKit2
 
 
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
+logger.debug("Logger initialized")
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -69,6 +71,9 @@ if __name__ == "__main__":
     logger.info(f"Using url {url}")
     initialize_window(url)
     Gtk.main()
+    logger.debug("Leaving application")
 
     if jupyter_process is not None:
-        jupyter_process.join()
+        logger.debug("Stopping juptyer server")
+        jupyter_process.terminate()
+        logger.debug("Server stopped")
