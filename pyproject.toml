@@ -18,3 +18,7 @@ jlb = "jlb:main"
 
 [tool.setuptools]
 py-modules = ["jlb"]
+
+[tool.setuptools.data-files]
+"etc/jupyter" = ["configuration/jupyter_lab_config.py"]
+"share/jupyter/lab/settings" = ["configuration/overrides.json"]
