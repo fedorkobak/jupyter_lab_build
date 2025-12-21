@@ -1,20 +1,44 @@
 # JupyterLab build
 
-Custom JupyterLab build.
+Custom JupyterLab build that launches JupyterLab inside a Gtk/WebKit window.
 
-## Dependencies
+## Requirements
 
-Uses `PyGObject` to run JupyterLab in a special window. This require special packages from your system so check [Installing PyGObject in Ubuntu/Debian](https://pygobject.gnome.org/getting_started.html#ubuntu-logo-ubuntu-debian-logo-debian).
+- Python 3.8+
+- System packages for `PyGObject` (see [Installing PyGObject in Ubuntu/Debian](https://pygobject.gnome.org/getting_started.html#ubuntu-logo-ubuntu-debian-logo-debian))
+
+
+## Usage
+
+Run the bundled app (starts a JupyterLab server if no URL is provided):
+
+```bash
+jlb
+```
+
+Open an existing JupyterLab instance:
+
+```bash
+jlb --url http://localhost:8888
+```
 
 ## Configuration
 
-Install configuration run script `configuration.sh`.
+Apply the repository configuration:
 
-To configure the `pycodestyle` put the configuration:
+```bash
+bash configuration.sh
+```
+
+Settings live under `configuration/` with per-extension `.jupyterlab-settings` files.
+
+## Coding Style
+
+Use `pycodestyle` and ignore `E303` and `E402`:
 
 ```ini
 [pycodestyle]
 ignore = E303,E402
 ```
 
-To the `setup.cfg` of the project or `~/.config/pycodestyle` for the user scope configuration.
+Place this in `setup.cfg` or `~/.config/pycodestyle`.
