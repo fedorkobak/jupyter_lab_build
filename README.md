@@ -12,13 +12,13 @@ Requirements
 Install jupyter lab configuration only:
 
 ```bash
-pip3 install git+https://github.com/fedorkobak/jupyter_lab_build.git
+pip3 install "jupyter_lab_build @ git+https://github.com/fedorkobak/jupyter_lab_build.git"
 ```
 
 To install the application that opens jupyter lab in a special window, without a browser:
 
 ```bash
-pip3 install git+https://github.com/fedorkobak/jupyter_lab_build.git[front]
+pip3 install "jupyter_lab_build[front] @ git+https://github.com/fedorkobak/jupyter_lab_build.git"
 ```
 
 
