@@ -2,10 +2,24 @@
 
 Custom JupyterLab build that launches JupyterLab inside a Gtk/WebKit window.
 
-## Requirements
+## Install
+
+Requirements
 
 - Python 3.8+
-- System packages for `PyGObject` (see [Installing PyGObject in Ubuntu/Debian](https://pygobject.gnome.org/getting_started.html#ubuntu-logo-ubuntu-debian-logo-debian))
+- System packages for `PyGObject` (see [Installing PyGObject in Ubuntu/Debian](https://pygobject.gnome.org/getting_started.html#ubuntu-logo-ubuntu-debian-logo-debian)). Only for speical non browser window.
+
+Install jupyter lab configuration only:
+
+```bash
+pip3 install git+https://github.com/fedorkobak/jupyter_lab_build.git
+```
+
+To install the application that opens jupyter lab in a special window, without a browser:
+
+```bash
+pip3 install git+https://github.com/fedorkobak/jupyter_lab_build.git[front]
+```
 
 
 ## Usage

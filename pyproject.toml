@@ -6,11 +6,15 @@ build-backend = "setuptools.build_meta"
 name = "jupyter-lab-build"
 version = "0.0.0"
 dependencies = [
-    "PyGObject==3.54.5",
     "jupyterlab",
     "jupyterlab-vim",
     "jupyterlab-lsp",
     "python-lsp-server"
+]
+
+[project.optional-dependencies]
+front = [
+    "PyGObject==3.54.5",
 ]
 
 [project.scripts]
