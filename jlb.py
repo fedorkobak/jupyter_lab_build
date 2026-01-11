@@ -25,14 +25,21 @@ def parse_arguments() -> argparse.Namespace:
         type=str,
         default=None
     )
+    parser.add_argument(
+        "--zoom",
+        type=float,
+        default=1.0,
+        help="WebKit zoom level (1.0 = 100%)."
+    )
     return parser.parse_args()
 
 
-def initialize_window(host: str):
+def initialize_window(host: str, zoom: float):
     win = Gtk.Window()
     win.set_default_size(1024, 768)
 
     view = WebKit2.WebView()
+    view.set_zoom_level(zoom)
     view.load_uri(host)
 
     win.add(view)
@@ -69,7 +76,7 @@ def main():
             url = shared.url
 
     logger.info(f"Using url {url}")
-    initialize_window(url)
+    initialize_window(url, cli_args.zoom)
     Gtk.main()
     logger.debug("Leaving application")
 
@@ -81,3 +88,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

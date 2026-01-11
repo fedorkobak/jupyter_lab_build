@@ -36,6 +36,12 @@ Open an existing JupyterLab instance:
 jlb --url http://localhost:8888
 ```
 
+Set the the webkit scale:
+
+```
+jlb --size 0.9
+```
+
 ## Configuration
 
 Apply the repository configuration:
