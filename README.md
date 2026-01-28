@@ -52,7 +52,7 @@ Use `pycodestyle` and ignore `E303` and `E402`:
 
 ```ini
 [pycodestyle]
-ignore = E303,E402
+ignore = E303,E402,E731
 ```
 
 Place this in `setup.cfg` or `~/.config/pycodestyle`.
