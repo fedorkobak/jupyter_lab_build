@@ -29,7 +29,7 @@ def parse_arguments() -> argparse.Namespace:
         "--zoom",
         type=float,
         default=0.9,
-        help="WebKit zoom level (1.0 = 100%)."
+        help="WebKit zoom level (1.0 = 100%%)."
     )
     return parser.parse_args()
 
