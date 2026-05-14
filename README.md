@@ -42,12 +42,14 @@ Set the the webkit scale:
 jlb --zoom 0.9
 ```
 
+Use the docker image to run the backend in docker.
+
 ## Configuration
 
 Apply the repository configuration:
 
 ```bash
-bash configuration.sh
+bash ./configuration/setup.sh
 ```
 
 Settings live under `configuration/` with per-extension `.jupyterlab-settings` files.
